@@ -10,7 +10,6 @@ public class HelloWorld {
 		System.out.println("master");
 		System.out.println("master");
 		System.out.println("master");
-		System.out.println("master");
 	}
 
 }
