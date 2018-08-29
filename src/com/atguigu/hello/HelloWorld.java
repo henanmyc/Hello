@@ -10,6 +10,10 @@ public class HelloWorld {
 		System.out.println("master");
 		System.out.println("master");
 		System.out.println("master");
+select bnsid from sol.tb_tracestep 
+where bnsid in (select bnsid from sol.tb_tracemain where applyid in 
+(select noticeid from sol.tb_plnotice where bnsstage != '1' and bnsstage != '2' and deleteflag = '1')
+)
 	}
 
 }
